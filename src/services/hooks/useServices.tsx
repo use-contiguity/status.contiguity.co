@@ -46,7 +46,7 @@ function useServices() {
 }
 
 async function logs(key: string): Promise<LogDaySummary[]> {
-    const response = await fetch(`https://raw.githubusercontent.com/s0urfruit/contiguity-status/main/public/status/${key}_report.log`);
+    const response = await fetch(`https://raw.githubusercontent.com/use-contiguity/status.contiguity.co/main/public/status/${key}_report.log`);
 
     const text = await response.text();
     const lines = text.split("\n");
